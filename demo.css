@@ -1,0 +1,135 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50; /* Change to your desired color */
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+#logo img {
+    max-height: 50px; /* Adjust logo size */
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+}
+
+.rightnav {
+    display: flex;
+    align-items: center;
+}
+
+#search {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+/* Main Section Styles */
+.background-firstsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.box-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.firsthalf, .secondhalf {
+    flex: 1;
+    padding: 20px;
+}
+
+.firsthalf {
+    max-width: 500px; /* Control width for smaller screens */
+}
+
+.text-big {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.text-small {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Change to your desired color */
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .box-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .firsthalf, .secondhalf {
+        width: 100%;
+        max-width: none;
+    }
+
+    .text-big {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-big {
+        font-size: 1.2em;
+    }
+
+    #search {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
